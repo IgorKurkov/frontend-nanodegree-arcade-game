@@ -1,3 +1,24 @@
+### Frogger game as final project from Udacity OOP course
+
+[SEE DEMO, play and have a fun!](https://igorkurkov.github.io/frontend-nanodegree-arcade-game/)
+
+or 
+
+[see source in REPO](https://github.com/IgorKurkov/frontend-nanodegree-arcade-game)
+
+Was added:
+
+ - functionality for enemy, player, collisions, etc
+ - levels
+ - new BUGS
+ - difficulty
+ - lives
+ - buttons for playing on mobile devices
+ - unexpected behavior))
+
+ So lets have a fun! It's easy mode now)
+
+
 frontend-nanodegree-arcade-game
 ===============================
 
