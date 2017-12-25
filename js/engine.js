@@ -31,6 +31,14 @@ var Engine = (function(global) {
     /* This function serves as the kickoff point for the game loop itself
      * and handles properly calling the update and render methods.
      */
+  
+    // const canvas = document.getElementById("myCanvas")
+    // const context = canvas.getContext("2d")
+    
+ 
+        
+
+
     function main() {
         /* Get our time delta information which is required if your game
          * requires smooth animation. Because everyone's computer processes
@@ -79,8 +87,10 @@ var Engine = (function(global) {
      */
     function update(dt) {
         updateEntities(dt);
-        // checkCollisions();
     }
+
+
+
 
     /* This is called by the update function and loops through all of the
      * objects within your allEnemies array as defined in app.js and calls
@@ -93,7 +103,7 @@ var Engine = (function(global) {
         allEnemies.forEach(function(enemy) {
             enemy.update(dt);
         });
-        player.update();
+        player.update(dt);
     }
 
     /* This function initially draws the "game level", it will then call
@@ -154,6 +164,7 @@ var Engine = (function(global) {
         });
 
         player.render();
+        level.render();
     }
 
     /* This function does nothing but it could have been a good place to
@@ -172,8 +183,25 @@ var Engine = (function(global) {
         'images/stone-block.png',
         'images/water-block.png',
         'images/grass-block.png',
+
+        'images/char-boy.png',
+        'images/char-boy-dead.png',
+        'images/char-boy-invisible.png',
+        'images/char-boy-rip.png',
+
+        'images/Heart.png',
+        'images/Star.png',
+
+        'images/rock.png',
         'images/enemy-bug.png',
-        'images/char-boy.png'
+        'images/enemy-bug-dark.png',
+        'images/enemy-bug-red.png',
+        'images/enemy-bug-evil.png',
+        'images/new-bug.png',
+        'images/scary-spider.png',
+        'images/enemy-bug-evil-vertical.png',
+        'images/enemy-bug-new-vertical.png'
+        
     ]);
     Resources.onReady(init);
 

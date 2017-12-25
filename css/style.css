@@ -1,3 +1,37 @@
 body {
     text-align: center;
+    position: relative;
 }
+#wrapper {
+    position: absolute;
+    top: 600px;
+    width: 100%;
+}
+.row {
+    float: left;
+    width: 100%;
+    margin: 0 auto;
+
+}
+button { 
+    border-radius: 4px;
+    font-size: 44px;
+    margin: 5px;
+    border: none;
+    color: white;
+    padding: 33px 68px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+.controls {background-color: #4CAF50;} 
+.controls:hover {background-color: rgb(42, 99, 44);}
+.controls:focus {background-color: rgb(22, 51, 23);}
+.controls:active {background-color: rgb(22, 51, 23);}
+#reset {
+    background-color: #f44336;
+    width: 470px;
+} 
+#reset:hover {background-color: #86261f;} 
+#reset:active {background-color: #411410;} 
