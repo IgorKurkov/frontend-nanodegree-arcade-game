@@ -139,8 +139,10 @@ Player.prototype.gameEnd = function(){
 
 Player.prototype.emulateButtonsPushing = function(keyboardInput){
     var el = document.getElementById(keyboardInput);
-    el.focus();
-    setTimeout(function(){  el.blur()  }, 100);
+    if (el){   
+        el.focus();
+        setTimeout(function(){  el.blur()  }, 100);
+    }
 }
 
 Player.prototype.handleInput = function(keyboardInput){
