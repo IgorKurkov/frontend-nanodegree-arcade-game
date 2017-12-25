@@ -29,9 +29,11 @@ button {
 .controls:hover {background-color: rgb(42, 99, 44);}
 .controls:focus {background-color: rgb(22, 51, 23);}
 .controls:active {background-color: rgb(22, 51, 23);}
-#reset {
+button#reset {
     background-color: #f44336;
     width: 470px;
+    font-size: 40px;
+    padding: 20px 3px;
 } 
 #reset:hover {background-color: #86261f;} 
 #reset:active {background-color: #411410;} 
